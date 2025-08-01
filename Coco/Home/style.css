@@ -1,3 +1,277 @@
+:root {
+    --primar-color: #FFFFFF;
+    --second-color: #393A40;
+    --third-color :#1D6362;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fontes e cores base */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  padding: 0 16px;
+}
+
+/* HEADER */
+.header {
+  padding: 16px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-inner img {
+  width: 36px;
+  height: 36px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-left: 8px;
+}
+
+.menu-mobile button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* TAG Verde */
+.header-information p {
+  display: inline-block;
+  background-color: #e6f4ec;
+  color: #15803d;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-top: 16px;
+}
+
+/* HERO */
+.hero {
+  margin-top: 24px;
+}
+
+.hero-Content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero-Content p {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+/* BOTÕES */
+.hero-Content ul {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 32px;
+}
+
+.hero-Content ul li a {
+  display: inline-block;
+  padding: 12px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+.hero-Content ul li:first-child a {
+  background-color: #0f5b5a;
+  color: white;
+}
+
+.hero-Content ul li:last-child a {
+  background-color: transparent;
+  color: #0f5b5a;
+  border: 1px solid #d1d5db;
+}
+
+.part1 {
+  background-color: #0F5B5A;
+  color: white;
+  padding: 40px 20px;
+}
+
+/* Título central */
+.part1 .Menu-meio h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.part1 .Menu-meio p {
+  font-size: 15px;
+  color: #d1d5db;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+/* Cada item */
+.part1 > div:not(.Menu-meio) {
+  margin-bottom: 32px;
+}
+
+.part1 img {
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 16px;
+}
+
+/* Título e parágrafo dos blocos */
+.part1 h2 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.part1 p {
+  font-size: 14px;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+.par2 {
+  background-color: #ffffff;
+  padding: 40px 0px;
+  text-align: center;
+}
+
+
+/* Imagem da conversa (ex: chat do Phoenix Baker) */
+.par2 .Menu img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+/* Título */
+.par2 .Menu h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+/* Parágrafo */
+.par2 .Menu p {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* Botão Explore Now */
+.par2 .Menu button {
+  background-color: #0f5b5a;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Seta para a direita opcional (→) */
+
+.par2 .Menu button::after {
+  content: "→";
+  font-weight: 400;
+}
+
+/* Efeito hover */
+.par2 .Menu button:hover {
+  background-color: #0b4948;
+}
+
+
+.part3 {
+  background-color: #e6f4ec;
+  background-image: url(/Coco/Imagens/Companies\ \(1\).png);
+  background-size: cover;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.part3 .color-h2 {
+  color: var(--third-color);
+  font-weight: 700;
+}
+
+.part3 .Menu h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.part3 .Menu h2 span,
+.part3 .Menu h2 strong {
+  color: #0f5b5a;
+}
+
+.part3 .Menu p {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 40px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.part3 .Menu img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+
+
+#menu-toggle {
+  font-size: 2rem;
+  font-weight: bold;
+  border: 0;
+  background-color: var(--primar-color);
+}
+
+
+
+
+/* PARTE DO FOOTER */
 .footer {
     padding: 40px 20px;
     font-family: Arial, sans-serif;
@@ -76,6 +350,7 @@
     color: #1A1A1A;
     margin-bottom: 16px;
     line-height: 1.4;
+   
   }
   
   .hero-section p {
@@ -85,6 +360,7 @@
     max-width: 360px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
   
   .explore-btn {
@@ -129,5 +405,34 @@
     font-weight: 600;
     border-radius: 8px;
     cursor: pointer;
+  }
+
+
+/* Responsividade */
+@media (max-width: 375px) {
+  .menu-desktop {
+    display: none;
+  }
+}
+ 
+  @media (min-width: 1024px){
+    .menu-desktop{
+      display: block;
+    }
+    
+    .menu-mobile{
+      display: none;
+    }
+    .menu-desktop ul{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1.5rem;
+      color: var(--second-color);
+   }
+
+   .menu-desktop ul a{ 
+      font-weight: 500;
+   }
   }
   
