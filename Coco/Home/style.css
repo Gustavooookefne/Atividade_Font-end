@@ -36,11 +36,24 @@ body {
 }
 
 .logo {
-  font-size: 20px;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin-left: 8px;
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  gap: 10px;            /* Espaço entre imagem e texto */
 }
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo h1 {
+  font-size: 2.2rem;
+  color: var(--third-color);
+  margin: 0;
+}
+
+
+
 
 .menu-mobile button {
   background: none;
@@ -238,7 +251,7 @@ body {
 
 .part3 .Menu h2 span,
 .part3 .Menu h2 strong {
-  color: #0f5b5a;
+  color: var(--third-color);
 }
 
 .part3 .Menu p {
@@ -409,30 +422,44 @@ body {
 
 
 /* Responsividade */
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .menu-desktop {
     display: none;
   }
 }
  
   @media (min-width: 1024px){
-    .menu-desktop{
-      display: block;
-    }
-    
-    .menu-mobile{
-      display: none;
-    }
-    .menu-desktop ul{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 1.5rem;
-      color: var(--second-color);
-   }
-
-   .menu-desktop ul a{ 
-      font-weight: 500;
-   }
+    .menu-desktop {
+    display: block;  /* Mostra o menu desktop */
   }
+
+  .menu-mobile {
+    display: none;   /* Esconde o botão do mobile */
+  }
+
+  .menu-desktop ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-desktop a {
+     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+  }
+
+   .menu-desktop span {
+    color: var(--third-color);
+  }
+  .menu-desktop a:hover {
+    font-weight: 700;
+    color: var(--third-color);
+  }
+}
+
+  
   
